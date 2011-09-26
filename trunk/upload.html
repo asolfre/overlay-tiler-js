@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Overlay Tiler</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
+  </script>
+  <script type="text/javascript" src="js/upload.js"></script>
+</head>
+<body>
+  <p>Upload an image to overlay:</p>
+  <form action="edit.html" method="get" enctype="multipart/form-data">
+    <input type="text" name="overlay" value="http://www.google.com/intl/en_com/images/srpr/logo3w.png">
+    <input type="submit" value="Upload">
+    <input type="hidden" name="lat" id="lat">
+    <input type="hidden" name="lng" id="lng">
+    <input type="hidden" name="z" id="zoom">
+  </form>
+  Choose initial position:
+  <div id="upload-map"></div>
+</body>
+</html>
+
