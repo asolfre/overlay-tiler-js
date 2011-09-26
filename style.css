@@ -1,0 +1,40 @@
+html, body, #map {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+.dot {
+  cursor: crosshair;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  border: 3px red groove;
+  height: 6px;
+  width: 6px;
+  margin-left: -6px;
+  margin-top: -6px;
+  border-radius: 6px;
+  -webkit-user-select: ignore !important;
+}
+.mover {
+  height: 12px;
+  width: 12px;
+  margin-left: -12px;
+  margin-top: -12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px #0f0 outset;
+  cursor: move;
+}
+.dot:active {
+  border-color: blue;
+}
+#upload-map {
+  height: 300px;
+  width: 600px;
+}
+#gdal-command {
+  padding: 5px;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
